@@ -13,7 +13,7 @@
 5. [License](#license)
 
 ## Description
-**Counter** is an educational Java project to practice conditionals, loops and exceptions. The goal is to interact with the user and generate a list of numbers based on their input. The first number represents the starting point of the count and the last one its endpoint, so all the numbers from this interval, including the ones from start and end, are compiled in a list. If the user inserts a second number less than the first one, it triggers an exception and its message. This challenge was proposed by Digital Innovation One (DIO) to apply the knowledge gained from their courses.
+**Counter** is an educational Java project to practice conditionals, loops and exceptions. The goal is to interact with the user and generate a list of numbers based on their input. The first number represents the starting point of the count and the last one its endpoint, so all the numbers from this interval, including the ones from start and end, are compiled in a list. If the user inserts an invalid input or the second number is less than the first one, it triggers an exception and its feedback message. This challenge was proposed by Digital Innovation One (DIO) to apply the knowledge gained from their courses.
 
 ## How to use
 > ### ⚠ Pre-requisites:
