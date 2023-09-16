@@ -1,12 +1,8 @@
 # Counter
 <div align="center">
   <img src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java">
-</div>
-
-<div align="center">
-  <p>-------------------------------------------</p>
-  <p>-------------- C O U N T E R --------------</p>
-  <p>-------------------------------------------</p>
+  <br>
+  <img src="https://github.com/lvamorim/counter/assets/118397791/78b5221e-0644-4cd3-8b37-ef97a20ca799" alt="Counter">
 </div>
 
 ## Topics
