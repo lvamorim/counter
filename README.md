@@ -15,7 +15,7 @@
 5. [License](#license)
 
 ## Description
-**Counter** is an educational Java project to practice conditionals, loops and exceptions. The goal is to interact with the user and generate a list of numbers based on their input. The first number represents the starting point of the count and the last one its endpoint, so all the numbers from this interval, including the ones from start and end, are compiled in a list. If the user inserts an invalid input or the second number is less than the first one, it triggers an exception and its feedback message. This challenge was proposed by Digital Innovation One (DIO) to apply the knowledge gained from their courses.
+**Counter** is a simple Java project to study conditionals, loops and exceptions. The goal is to interact with the user and generate a list of numbers based on their input. The first number represents the starting point of the count and the last one its endpoint, so all the numbers from this interval, including the ones from start and end, are compiled in a list. If the user inserts an invalid input or the second number is less than the first one, it triggers an exception and its feedback message. This challenge was proposed by Digital Innovation One (DIO) to apply the knowledge gained from their courses.
 
 ## How to use
 > ### ⚠ Pre-requisites:
@@ -28,16 +28,16 @@
 
 ## Techniques
 - Scanner: taking the user input.
-- if statement: checking if the number is less than another.
-- try/catch block: handling exceptions.
-- custom exceptions: providing user feedback when input invalid data.
-- for loop iteration: generating the numbers list.
+- If statement: checking if the number is less than another.
+- Try/catch block: handling exceptions.
+- Custom exceptions: providing user feedback when input invalid data.
+- For loop iteration: generating the numbers list.
 
 ## Developer
 | [<img src="https://github.com/lvamorim.png" width=100><br><sub>LV</sub>](https://github.com/lvamorim) |
 | :---: |
 
 ## License
-[**MIT** License](https://github.com/lvamorim/uverse-blog/blob/main/LICENSE)
+[**MIT** License](https://github.com/lvamorim/counter/blob/main/LICENSE)
 
 Copyright ©2023 — Counter
