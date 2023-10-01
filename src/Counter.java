@@ -3,7 +3,7 @@ import java.util.InputMismatchException;
 
 public class Counter {
   public static void main(String[] args) {
-    title();
+    printTitle("Counter");
 
     int num1, num2;
 
@@ -14,52 +14,67 @@ public class Counter {
       System.out.println("Now, insert the second number:");
       num2 = scanner.nextInt();
 
-      System.out.println();
+      printCounter(num1, num2);
+    }
 
-      try {
-        count(num1, num2);
-      }
-      
-      catch (IllegalArgumentException e) {
-        scanner.nextLine();
-        errorMsg("Second number must be greater than first number.");
-      }
+    catch (IllegalArgumentException e) {
+      printErrorMessage("Second number must be greater than first number.");
     }
 
     catch (InputMismatchException e) {
-      errorMsg("Invalid input. Please insert two numbers.");
+      printErrorMessage("Invalid input. Please insert an integer number.");
     }
 
     finally {
-      drawLine();
+      divider();
     }
   }
 
-  static void count(int num1, int num2) {
+  private static final int DIVIDER_LENGTH = 50;
+
+  private static void printCounter(int num1, int num2) {
 		if (num2 <= num1) {
 			throw new IllegalArgumentException();
 		}
 		
-    System.out.println("----------------- L I S T -----------------");
+    printTitle("List");
     
     for (int i = num1; i <= num2; i++) {
       System.out.println("Current number: " + i);
     }
+
+    System.out.println(
+      "\n" +
+      "  /\\_/\\  (\r\n" +
+      " ( ^.^ ) _)  thanks for\r\n" +
+      "   \\\"/  (      using\r\n" +
+      " ( | | )      Counter!\r\n" +
+      "(__d b__)"
+    );
 	}
 
-  static void title() {
-    drawLine();
-		System.out.println("-------------- C O U N T E R --------------");
-    drawLine();
-		System.out.println();
-  }
-
-  static void errorMsg(String msg) {
-    System.err.println("---------------- E R R O R ----------------");
+  private static void printErrorMessage(String msg) {
+    printTitle("Error");
     System.err.println(msg);
   }
 
-  static void drawLine() {
-    System.out.println("-------------------------------------------");
+  private static void divider() {
+    String divider = "";
+
+    for (int i = 0; i < DIVIDER_LENGTH; i++) {
+      divider +=  "-";
+    }
+
+    System.out.println(divider);
+  }
+
+  private static void printTitle(String title) {
+    int length = (DIVIDER_LENGTH - title.length()) / 2;
+    String spacing = " ".repeat(length);
+    title = title.toUpperCase();
+
+    divider();
+    System.out.println(spacing + title + spacing);
+    divider();
   }
 }
